@@ -31,7 +31,7 @@ export class ClientsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllClients();
-    console.log(this.clients);
+
 
 
 
@@ -68,7 +68,7 @@ export class ClientsComponent implements OnInit {
       sharedKey:this.sharedKey
     }
 
-    console.log(this.clientToSend);
+
 
 
     this.clientService.createClient(this.clientToSend).then(data=>{
